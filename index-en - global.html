@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Corona Stats in Sri Lanka</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    
+
+
+    <!-- Bootstrap core CSS     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!--     Fonts and icons     -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/global.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+    .newCard{
+        
+        text-align: center;
+        
+        max-width: 1500px;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+    }
+    .card{
+        margin-right: 50px;
+        color: aliceblue;
+        
+    }
+    @media screen and (max-width: 640px) {
+    .card{
+      width: 100%;
+  }
+
+  .subh{
+      text-align: center;
+  }
+  
+}
+</style>
+</head>
+<body>
+
+  
+	<div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            
+          </div>
+        </div>
+             <nav class="navbar navbar-dark bg-dark">
+	<center> <a class="navbar-brand" href="#">
+
+           <center> <img src="https://hpb.health.gov.lk/social_share/logo.png" width="50" height="50" >
+          කොරෝනා සංඛ්‍යාලේඛනය
+              </a> </center>  
+          
+         </center>    
+       
+      </div></center>
+    
+
+
+      
+
+
+<div>
+    <p class="subh"><div style="text-align: center;">Last Update :</div> <div id ="last" style="text-align: center;"><br>
+    </div></p>
+    <center>
+        <input type='button'value='සිංහල' class="btn btn-dark" style="margin-bottom: 10px;" onclick="document.location.href='index.html';"/>
+        <input type='button'value='Global' class="btn btn-dark" style="margin-bottom: 10px;" onclick="document.location.href='index-global.html';"/>
+    </center>
+</div>
+
+
+  
+    <div class="newCard">
+        <div class="card-group">
+            <div class="card bg-primary">
+              <div class="card-body text-center">
+                <p class="card-text">
+                   <b><h4>Total Number of Patients</h4></b> </p>
+                   <b><h4><div id="total"></div></h4></b> </p>  
+              </div>
+            </div>
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <b><h4>New Cases</h4></b> </p>
+                   <b><h4><div id="new"></div></h4></b> </p>
+              </div>
+            </div>
+            <div class="card bg-success">
+              <div class="card-body text-center">
+                <b><h4>
+                    Total Number of Recovered</h4></b> </p>
+                   <b><h4><div id="rec1"></div></h4></b> </p>
+              </div>
+            </div>
+            <div class="card bg-danger">
+              <div class="card-body text-center">
+                <b><h4>Deaths</h4></b> </p>
+                   <b><h4><div id="death"></div></h4></b> </p>
+              </div>
+            </div>
+            <div class="card bg-info">
+                <div class="card-body text-center">
+                  <b><h4>Global deaths reported during last 24 hours</h4></b> </p>
+                     <b><h4><div id="hospi"></div></h4></b> </p>
+                </div>
+              </div>
+          </div>
+</div>
+
+
+
+<div>
+  <p class="subh"><div style="text-align: center;">Source :<br><a href=" https://hpb.health.gov.lk/en/api-documentation">Health Promotion Bureau</a>
+      </div></p>
+      <center><img src="assets/img/logo.png" alt="site logo" style="text-align:center ;"><br><br>
+      <a href="https://github.com/kaweendras/covid-19-stats"> Fork on Github <img src="assets/img/fork.png" alt="Fork" style="text-align:center ;"></a><br><h6>April 2020</h6></center>
+</div>
+
+<center>
+       	<a href="https://www.facebook.com/suhith.sukki"> <img src="assets/img/fb.png" ></a>
+       	<a href="https://www.linkedin.com/in/hasr/"> <img src="assets/img/linkedin.png" ></a>
+       	<a href="https://medium.com/@suhithresuthajayasekara"> <img src="assets/img/medium.png" ></a>
+       <a href="https://github.com/SuhithJayasekara/
+"> <img src="assets/img/github.png" ></a>
+     
+       </center>
+    
+
+</body>
+</html>
